@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profiles</title>
+    <style>
+      #bio {
+        width: 300px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>User Profiles</h1>
+    <form
+      action="http://comp334.studentswebprojects.ritaj.ps/util/process.php"
+      method="post"
+    >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+      <label for="photo">Photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required />
+      <br />
+      <label for="bio">Bio:</label><br />
+      <textarea id="bio" name="bio" required></textarea><br />
+
+      <input type="submit" value="Create Profile" /><br />
+      <a href="./index.html">Back</a>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Sharing</title>
+  </head>
+  <body>
+    <h1>File Sharing</h1>
+    <form
+      action="http://comp334.studentswebprojects.ritaj.ps/util/process.php"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <label for="file">Upload Any Files You Would Like to Share:</label>
+      <input type="file" id="file" name="file" required />
+      <br />
+      <label for="sharing">What are You Sharing:</label>
+      <select id="sharing" name="sharing" required>
+        <option value="resources">Resources</option>
+        <option value="templates">Templates</option>
+        <option value="bestPractices">Best Practices</option>
+      </select>
+      <br />
+      <input type="submit" value="Upload File" /><br />
+      <a href="./index.html">Back</a>
+    </form>
+  </body>
+</html>

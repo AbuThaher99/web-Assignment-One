@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Base</title>
+    <style>
+      #description {
+        width: 300px;
+        height: 150px;
+      }
+      #body {
+        width: 300px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Knowledge Base</h1>
+    <form
+      action="http://comp334.studentswebprojects.ritaj.ps/util/process.php"
+      method="post"
+    >
+      <label for="topic">Topic:</label>
+      <input type="text" id="topic" name="topic" required />
+      <br />
+      <label for="description">Description:</label> <br />
+      <textarea id="description" name="description" required></textarea> <br />
+
+      <label for="body">Body Text:</label> <br />
+      <textarea id="body" name="body" required></textarea> <br />
+
+      <label for="image">Image:</label>
+      <input type="file" id="image" name="image" accept="image/*" required />
+      <br />
+      <input type="submit" value="Publish Article" /><br />
+      <a href="./index.html">Back</a>
+    </form>
+  </body>
+</html>
